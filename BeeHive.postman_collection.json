@@ -1,0 +1,187 @@
+{
+	"info": {
+		"_postman_id": "7c365293-6b0f-49fd-99bb-765e69cb9b7d",
+		"name": "BeeHive",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27934978"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/api/hives",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "hiveId",
+							"value": "HIVE010",
+							"type": "text"
+						},
+						{
+							"key": "datePlaced",
+							"value": "2025-07-08",
+							"type": "text"
+						},
+						{
+							"key": "latitude",
+							"value": "28.7041",
+							"type": "text"
+						},
+						{
+							"key": "longitude",
+							"value": "77.1025",
+							"type": "text"
+						},
+						{
+							"key": "numColonies",
+							"value": "5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/hives",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"hives"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/hives?startDate=2025-01-01&endDate=2025-07-04",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/hives?startDate=2025-01-01&endDate=2025-07-04",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"hives"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2025-01-01"
+						},
+						{
+							"key": "endDate",
+							"value": "2025-07-04"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/crops",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Sunflower",
+							"type": "text"
+						},
+						{
+							"key": "floweringStart",
+							"value": "2025-04-10",
+							"type": "text"
+						},
+						{
+							"key": "floweringEnd",
+							"value": "2025-04-25",
+							"type": "text"
+						},
+						{
+							"key": "latitude",
+							"value": "26.9124",
+							"type": "text"
+						},
+						{
+							"key": "longitude",
+							"value": "75.7873",
+							"type": "text"
+						},
+						{
+							"key": "recommendedHiveDensity",
+							"value": "5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/crops",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"crops"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/crops/nearby?latitude=26.91&longitude=75.78&radius=1&date=2025-04-16",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/crops/nearby?latitude=26.91&longitude=75.78&radius=1&date=2025-04-16",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"crops",
+						"nearby"
+					],
+					"query": [
+						{
+							"key": "latitude",
+							"value": "26.91"
+						},
+						{
+							"key": "longitude",
+							"value": "75.78"
+						},
+						{
+							"key": "radius",
+							"value": "1"
+						},
+						{
+							"key": "date",
+							"value": "2025-04-16"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
