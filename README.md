@@ -8,7 +8,7 @@ This is a Node.js + Express.js + MongoDB backend system to log beehive placement
 
 1. **Clone the repo**
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/Ayush-Mahariya/Beehive-Crop-Tracker-Backend
    cd beehive-tracker
    ```
 
