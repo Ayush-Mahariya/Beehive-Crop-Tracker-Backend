@@ -22,7 +22,7 @@ This is a Node.js + Express.js + MongoDB backend system to log beehive placement
 
 4. **Start the server**
    ```bash
-   node app.js
+   node server.js
    ```
 
    Server will run at [http://localhost:3000](http://localhost:3000)
